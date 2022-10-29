@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form name="sipForm">
+        <div class="sip-calculator">
+            <h3 id="heading" style="margin-bottom: 1.5em; text-align: center;">Sip Calculator</h3>
+            <div class="sip-calculator-amount">
+                <p style="margin-top: 1.8em;">
+                    <label id="amountLabel"> Monthly Investment</label>
+                    <input name="Amount" id="inputAmount" type="number" step="500" value="5000" min="500"
+                        max="100000" />
+                    <span id="amount"></span> Rs.
+                </p>
+                <input class="amount-slider" name="realAmount" id="myAmount" type="range" step="500" min="500"
+                    max="1000000" value="5000" />
+            </div>
+            <div class="sip-calculator-year">
+                <p style="margin-top: 1.8em;">
+                    Time Period
+                    <input name="Years" id="inputYears" type="number" value="10" min="1" max="30" />
+                    <span id="years"></span> Yr
+                </p>
+                <input class="year-slider" name="realYears" id="myYears" type="range" min="1" max="30" value="10">
+            </div>
+            <div class="sip-calculator-roi">
+                <p style="margin-top: 1.8em;">
+                    Return Rate
+                    <input name="Retunrs" id="inputRoi" type="number" value="15" min="5" max="30" />
+                    <span id="roi"></span> %
+                </p>
+                <input class="roi-slider" name="realRoi" id="myRoi" type="range" min="5" max="30" value="15">
+            </div>
+            <p class="returndiv">
+                <strong>Invested Amount:</strong>
+                <span id="investvalue" style="font-size: 1.2em;margin-left: 8px;"></span>
+            </p>
+            <p class="returndiv">
+                <strong>Est. Returns:</strong>
+                <span id="estreturn" style="font-size: 1.2em;margin-left: 8px;"></span>
+            </p>
+            <p class="returndiv">
+                <strong>Total Values:</strong>
+                <span id="totalv" style="font-size: 1.2em;margin-left: 8px;"></span>
+            </p>
+        
+    
+    <div class="link"><a href="https://vipcalculator.com/calculator/sip-calculator.php">Sip Calculator </a></div>
+</div>
+</form>
+    <script src="index.js"></script>
+</body>
+
+</html>
